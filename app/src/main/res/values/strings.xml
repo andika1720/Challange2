@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">ChallangeBinar2</string>
+    <string name="hai_binarian">Hai Binarian,</string>
+    <string name="mau_makan_apa_hari_ini">Mau makan apa hari ini?</string>
+    <string name="imguser">imguser</string>
+    <string name="imgcart">imgcart</string>
+    <string name="bckgrndsc">bckgrndsc</string>
+    <string name="dscimg">dscimg</string>
+    <string name="diskon_30">Diskon 30%</string>
+    <string name="pesan_makanan_lewat_aplikasi_dan_dapatkan_diskonmu">Pesan makanan lewat aplikasi dan dapatkan diskonmu</string>
+    <string name="imgnasi">imgnasi</string>
+    <string name="nasi_goreng">Nasi Goreng</string>
+    <string name="imgmie">imgMie</string>
+    <string name="mie">Mie</string>
+    <string name="imgkntng">imgkntng</string>
+    <string name="friedfries">FriedFries</string>
+    <string name="img_minuman">img_minuman</string>
+    <string name="minuman">Minuman</string>
+    <string name="imglist">imglist</string>
+    <string name="list_menu_makanan">List Menu Makanan</string>
+    <string name="burger_n_rp_45_000">Burger \n Rp. 45.000</string>
+    <string name="imgburgir">imgBurgir</string>
+    <string name="imgayam">imgAyam</string>
+    <string name="chicken_wings_n_rp_25_000">Chicken Wings\n Rp.25.000</string>
+    <string name="imgsalmon">imgSalmon</string>
+    <string name="sushisalmon_n_rp_50_000">SushiSalmon\n Rp. 50.000</string>
+    <string name="imgpizza">imgPizza</string>
+    <string name="pizza_n_rp_42_000">Pizza\n Rp.42.000</string>
+
+</resources>
