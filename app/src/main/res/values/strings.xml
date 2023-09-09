@@ -16,8 +16,6 @@
     <string name="friedfries">FriedFries</string>
     <string name="img_minuman">img_minuman</string>
     <string name="minuman">Minuman</string>
-    <string name="imglist">imglist</string>
-    <string name="list_menu_makanan">List Menu Makanan</string>
     <string name="burger_n_rp_45_000">Burger \n Rp. 45.000</string>
     <string name="imgburgir">imgBurgir</string>
     <string name="imgayam">imgAyam</string>
@@ -26,5 +24,7 @@
     <string name="sushisalmon_n_rp_50_000">SushiSalmon\n Rp. 50.000</string>
     <string name="imgpizza">imgPizza</string>
     <string name="pizza_n_rp_42_000">Pizza\n Rp.42.000</string>
+    <string name="list_menu_makanan">List Menu Makanan</string>
+    <string name="img_list">img_list</string>
 
 </resources>

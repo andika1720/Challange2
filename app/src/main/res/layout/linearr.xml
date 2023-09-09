@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+<ImageView
+    android:id="@+id/nasiGoreng"
+    android:layout_width="80dp"
+    android:layout_height="80dp"
+    android:contentDescription="@string/imgnasi"
+    android:src="@drawable/nasi_goreng"
+    android:scaleType="centerCrop" />
+<TextView
+    android:id="@+id/txtnasi"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/nasi_goreng"
+    android:layout_below="@id/nasiGoreng"/>
+<ImageView
+    android:id="@+id/Miee"
+    android:layout_width="80dp"
+    android:layout_height="80dp"
+    android:layout_marginStart="15dp"
+    android:contentDescription="@string/imgmie"
+    android:src="@drawable/mie"
+    android:scaleType="centerCrop"
+    android:layout_toEndOf="@id/nasiGoreng"/>
+<TextView
+    android:id="@+id/txtmie"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="45dp"
+    android:text="@string/mie"
+    android:layout_below="@id/Miee"
+    android:layout_toEndOf="@id/txtnasi"/>
+<ImageView
+    android:id="@+id/kentang"
+    android:layout_width="80dp"
+    android:layout_height="80dp"
+    android:layout_marginStart="13dp"
+    android:contentDescription="@string/imgkntng"
+    android:src="@drawable/kentang"
+    android:scaleType="centerCrop"
+    android:layout_toEndOf="@id/Miee"/>
+<TextView
+    android:id="@+id/txtkntng"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="55dp"
+    android:text="@string/friedfries"
+    android:layout_below="@id/kentang"
+    android:layout_toEndOf="@id/txtmie"/>
+<ImageView
+    android:id="@+id/minumam"
+    android:layout_width="80dp"
+    android:layout_height="80dp"
+    android:layout_marginStart="15dp"
+    android:contentDescription="@string/img_minuman"
+    android:src="@drawable/minuman"
+    android:scaleType="centerCrop"
+    android:layout_toEndOf="@id/kentang"/>
+<TextView
+    android:id="@+id/txtmnuman"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="30dp"
+    android:text="@string/minuman"
+    android:layout_below="@id/minumam"
+    android:layout_toEndOf="@id/txtkntng"/>
+</RelativeLayout>

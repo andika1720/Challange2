@@ -15,25 +15,28 @@
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
-    
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/txt2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:text="@string/mau_makan_apa_hari_ini"
         android:textSize="18sp"
-        app:layout_constraintTop_toBottomOf="@id/txt1"
-        app:layout_constraintStart_toStartOf="parent"/>
-    
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt1" />
+
     <ImageView
         android:id="@+id/user"
         android:layout_width="24dp"
         android:layout_height="24dp"
+        android:layout_marginTop="10dp"
         android:contentDescription="@string/imguser"
         android:src="@drawable/userhtm"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="@id/txt1"/>
+        app:layout_constraintBottom_toBottomOf="@id/txt1"
+        app:layout_constraintEnd_toEndOf="parent" />
+
     <ImageView
         android:id="@+id/cart"
         android:layout_width="24dp"
@@ -41,19 +44,21 @@
         android:layout_marginEnd="12dp"
         android:contentDescription="@string/imgcart"
         android:src="@drawable/keranjang_belanja"
-        app:layout_constraintEnd_toStartOf="@id/user"
-        app:layout_constraintBottom_toBottomOf="@id/txt1"/>
+        app:layout_constraintBottom_toBottomOf="@id/txt1"
+        app:layout_constraintEnd_toStartOf="@id/user" />
+
     <ImageView
         android:id="@+id/bckgrn"
         android:layout_width="340dp"
-        android:layout_height="140dp"
+        android:layout_height="160dp"
         android:layout_marginTop="5dp"
         android:contentDescription="@string/bckgrndsc"
         android:scaleType="centerCrop"
         android:src="@drawable/bacdisc"
-        app:layout_constraintTop_toBottomOf="@id/txt2"
         app:layout_constraintEnd_toEndOf="@id/user"
-        app:layout_constraintStart_toStartOf="@id/txt2"/>
+        app:layout_constraintStart_toStartOf="@id/txt2"
+        app:layout_constraintTop_toBottomOf="@id/txt2" />
+
     <ImageView
         android:id="@+id/discimg"
         android:layout_width="63dp"
@@ -62,18 +67,20 @@
         android:contentDescription="@string/dscimg"
         android:src="@drawable/disc"
         app:layout_constraintStart_toStartOf="@id/bckgrn"
-        app:layout_constraintTop_toTopOf="@id/bckgrn"/>
+        app:layout_constraintTop_toTopOf="@id/bckgrn" />
+
     <TextView
         android:id="@+id/txtdsc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:text="@string/diskon_30"
-        android:textStyle="bold"
         android:textColor="#FFFF"
         android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@id/bckgrn"
-        app:layout_constraintTop_toTopOf="@id/bckgrn"/>
+        app:layout_constraintTop_toTopOf="@id/bckgrn" />
+
     <TextView
         android:id="@+id/psnmakan"
         android:layout_width="wrap_content"
@@ -82,248 +89,41 @@
         android:textColor="#FFFF"
         android:textSize="13sp"
         app:layout_constraintBottom_toBottomOf="@id/bckgrn"
-        app:layout_constraintStart_toStartOf="@id/bckgrn"
-        app:layout_constraintEnd_toEndOf="@id/bckgrn"/>
+        app:layout_constraintEnd_toEndOf="@id/bckgrn"
+        app:layout_constraintStart_toStartOf="@id/bckgrn" />
 
-    <RelativeLayout
-        android:id="@+id/tampilan"
-        android:layout_width="wrap_content"
+    <include
+        android:id="@+id/bwhbck"
+        layout="@layout/linearr"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
-        app:layout_constraintTop_toBottomOf="@id/bckgrn"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
-        <ImageView
-            android:id="@+id/nasiGoreng"
-            android:layout_width="77dp"
-            android:layout_height="66dp"
-            android:contentDescription="@string/imgnasi"
-            android:src="@drawable/nasi_goreng"
-            android:scaleType="centerCrop" />
-        <TextView
-            android:id="@+id/txtnasi"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/nasi_goreng"
-            android:layout_below="@id/nasiGoreng"/>
-        <ImageView
-            android:id="@+id/Miee"
-            android:layout_width="77dp"
-            android:layout_height="66dp"
-            android:layout_marginStart="15dp"
-            android:contentDescription="@string/imgmie"
-            android:src="@drawable/mie"
-            android:scaleType="centerCrop"
-            android:layout_toEndOf="@id/nasiGoreng"/>
-        <TextView
-            android:id="@+id/txtmie"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="35dp"
-            android:text="@string/mie"
-            android:layout_below="@id/Miee"
-            android:layout_toEndOf="@id/txtnasi"/>
-        <ImageView
-            android:id="@+id/kentang"
-            android:layout_width="77dp"
-            android:layout_height="66dp"
-            android:layout_marginStart="15dp"
-            android:contentDescription="@string/imgkntng"
-            android:src="@drawable/kentang"
-            android:scaleType="centerCrop"
-            android:layout_toEndOf="@id/Miee"/>
-        <TextView
-            android:id="@+id/txtkntng"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="50dp"
-            android:text="@string/friedfries"
-            android:layout_below="@id/kentang"
-            android:layout_toEndOf="@id/txtmie"/>
-        <ImageView
-            android:id="@+id/minumam"
-            android:layout_width="77dp"
-            android:layout_height="66dp"
-            android:layout_marginStart="15dp"
-            android:contentDescription="@string/img_minuman"
-            android:src="@drawable/minuman"
-            android:scaleType="centerCrop"
-            android:layout_toEndOf="@id/kentang"/>
-        <TextView
-            android:id="@+id/txtmnuman"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="36dp"
-            android:text="@string/minuman"
-            android:layout_below="@id/minumam"
-            android:layout_toEndOf="@id/txtkntng"/>
-    </RelativeLayout>
+        app:layout_constraintTop_toBottomOf="@id/psnmakan" />
 
-    <RelativeLayout
-        android:layout_height="wrap_content"
+    <TextView
+        android:id="@+id/txtlist"
         android:layout_width="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/tampilan"
-        app:layout_constraintStart_toStartOf="parent">
+        android:layout_height="wrap_content"
+        android:text="@string/list_menu_makanan"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/grid"
+        app:layout_constraintStart_toStartOf="parent"
+        />
 
-        <TextView
-            android:id="@+id/ListMenu"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="@string/list_menu_makanan"
-            android:textStyle="bold"
-            android:textSize="18sp"/>
-        
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginStart="180dp"
-            android:contentDescription="@string/imglist"
-            android:layout_toEndOf="@id/ListMenu"
-            android:src="@drawable/list_format"/>
+    <ImageView
+        android:id="@+id/listimg"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:contentDescription="@string/img_list"
+        android:src="@drawable/list_format"
+        app:layout_constraintTop_toTopOf="@id/txtlist"
+        app:layout_constraintEnd_toEndOf="parent"/>
 
-        <GridLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/ListMenu"
-            android:layout_marginTop="10dp"
-            android:rowCount="2"
-            android:columnCount="2"
+    <include layout="@layout/linear_layout"
+        android:id="@+id/grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"/>
 
-            >
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_row="0"
-                android:layout_column="0"
-                android:layout_gravity="center"
-                android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
-                android:layout_margin="0dp"
-                app:cardCornerRadius="0dp"
-                app:cardElevation="0dp"
-                >
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:gravity="center"
-                    android:layout_gravity="fill_vertical|fill_horizontal">
-                    <ImageView
-                        android:layout_width="130dp"
-                        android:layout_height="100dp"
-                        android:contentDescription="@string/imgburgir"
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/burger"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/burger_n_rp_45_000"
-                        android:textStyle="bold"
-                        android:textAlignment="center"/>
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_row="0"
-                android:layout_column="1"
-                android:layout_gravity="center"
-                android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
-                android:layout_margin="0dp"
-                app:cardCornerRadius="0dp"
-                app:cardElevation="0dp"
-                >
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:gravity="center"
-                    android:layout_gravity="fill_vertical|fill_horizontal">
-                    <ImageView
-                        android:layout_width="130dp"
-                        android:layout_height="100dp"
-                        android:contentDescription="@string/imgayam"
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/chicken_wings"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/chicken_wings_n_rp_25_000"
-                        android:textStyle="bold"
-                        android:textAlignment="center"/>
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_row="1"
-                android:layout_column="0"
-                android:layout_gravity="center"
-                android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
-                android:layout_margin="0dp"
-                app:cardCornerRadius="0dp"
-                app:cardElevation="0dp"
-                >
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:gravity="center"
-                    android:layout_gravity="fill_vertical|fill_horizontal">
-                    <ImageView
-                        android:layout_width="130dp"
-                        android:layout_height="120dp"
-                        android:contentDescription="@string/imgsalmon"
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/salmon"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/sushisalmon_n_rp_50_000"
-                        android:textStyle="bold"
-                        android:textAlignment="center"/>
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_row="1"
-                android:layout_column="1"
-                android:layout_gravity="center"
-                android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
-                android:layout_margin="0dp"
-                app:cardCornerRadius="0dp"
-                app:cardElevation="0dp"
-                >
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:gravity="center"
-                    android:layout_gravity="fill_vertical|fill_horizontal">
-                    <ImageView
-                        android:layout_width="130dp"
-                        android:layout_height="120dp"
-                        android:contentDescription="@string/imgpizza"
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/pizzabck"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/pizza_n_rp_42_000"
-                        android:textStyle="bold"
-                        android:textAlignment="center"/>
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-        </GridLayout>
-    </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
